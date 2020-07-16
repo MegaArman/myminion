@@ -1,0 +1,25 @@
+{
+  "format_version": 1,
+  "header": {
+    "name": "myminion Resources",
+    "description": "friendly npc allies",
+    "uuid": "16adddaa-3fc6-4307-bc0d-3e03d4f76ed0",
+    "version": [
+      1,
+      0,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "Resources for myminion",
+      "type": "resources",
+      "uuid": "759a04a9-c13c-4b37-92b2-2ad204aee775",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}

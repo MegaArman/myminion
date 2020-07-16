@@ -1,0 +1,35 @@
+{
+  "format_version": 1,
+  "header": {
+    "name": "myminion Behaviors",
+    "description": "friendly npc allies",
+    "uuid": "5466cf1f-3b57-45be-a79f-71d13f6db32d",
+    "version": [
+      1,
+      0,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "behaviours for myminion",
+      "type": "client_data",
+      "uuid": "83b78d4e-ce4d-49b8-8d6a-08328a06efdc",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "16adddaa-3fc6-4307-bc0d-3e03d4f76ed0",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}
