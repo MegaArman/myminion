@@ -2,11 +2,11 @@
   "format_version": "1.10.0",
   "minecraft:client_entity": {
     "description": {
-      "identifier": "myminion:explodepig",
+      "identifier": "myminion:super_pig",
       "materials": { "default": "pig" },
       "textures": {
-        "default": "textures/entity/pig/pig",
-        "saddled": "textures/entity/pig/pig_saddle"
+        "default": "textures/entity/super_pig/super_pig",
+        "saddled": "textures/entity/super_pig/super_pig_saddle"
       },
       "geometry": {
         "default": "geometry.pig"
