@@ -14,7 +14,7 @@
 				"default": "geometry.clock"
 			},
 			"textures": {
-				"default": "textures/entity/clock"
+				"default": "textures/entity/pig/pig"
 			},
 			"materials": {
 				"default": "entity"
