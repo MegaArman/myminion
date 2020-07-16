@@ -12,7 +12,7 @@
         "minecraft:is_baby": {
         },
         "minecraft:scale": {
-          "value": 8
+          "value": 0.5
         },
         "minecraft:ageable": {
           "duration": 1200,
@@ -126,10 +126,13 @@
       },
   "minecraft:exploding": {
     "minecraft:explode": {
-      "fuseLength": 1.5,
+      "fuseLength": 0.5,
       "fuseLit": true,
       "power": 3,
       "causesFire": false
+    },
+    "minecraft:scale": {
+      "value": 4
     }
   }
     },
@@ -222,12 +225,12 @@
         "speed_multiplier": 1.0
       },
       "minecraft:behavior.look_at_player": {
-        "priority": 8,
-        "look_distance": 6.0,
-        "probability": 0.02
+        "priority": 9,
+        "look_distance": 18.0,
+        "probability": 0.5
       },
       "minecraft:behavior.random_look_around": {
-        "priority": 9
+        "priority": 8
       },
 	    "minecraft:physics": {
       },
@@ -239,14 +242,14 @@
   "priority": 1,
   "entity_types": [
     {
-      "filters": { "other_with_families": "player" },
-      "max_dist": 16
+      "filters": { "other_with_families": ["mob"] },
+      "max_dist": 32
     }
   ],
   "must_see": true
 },
 "minecraft:target_nearby_sensor": {
-  "inside_range": 3.0,
+  "inside_range": 32.0,
   "outside_range": 7.0,
   "on_inside_range": {
     "event": "minecraft:start_exploding",
