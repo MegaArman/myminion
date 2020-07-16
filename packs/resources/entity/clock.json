@@ -1,0 +1,32 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "tutorial:clock",
+			"spawn_egg": {
+				"base_color": "#ccd3d8",
+				"overlay_color": "#282c2e"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"geometry": {
+				"default": "geometry.clock"
+			},
+			"textures": {
+				"default": "textures/entity/clock"
+			},
+			"materials": {
+				"default": "entity"
+			},
+			"animations": {
+				"spin": "animation.clock.spin"
+			},
+			"scripts": {
+				"animate": [
+					"spin"
+				]
+			}
+		}
+	}
+}
