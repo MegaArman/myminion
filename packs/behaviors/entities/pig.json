@@ -12,7 +12,7 @@
         "minecraft:is_baby": {
         },
         "minecraft:scale": {
-          "value": 0.5
+          "value": 8
         },
         "minecraft:ageable": {
           "duration": 1200,
@@ -123,7 +123,15 @@
         "minecraft:behavior.controlled_by_player": {
           "priority": 0
         }
-      }
+      },
+  "minecraft:exploding": {
+    "minecraft:explode": {
+      "fuseLength": 1.5,
+      "fuseLit": true,
+      "power": 3,
+      "causesFire": false
+    }
+  }
     },
 
 
@@ -226,7 +234,29 @@
       "minecraft:pushable": {
         "is_pushable": true,
         "is_pushable_by_piston": true
-      }
+      },
+"minecraft:behavior.nearest_attackable_target": {
+  "priority": 1,
+  "entity_types": [
+    {
+      "filters": { "other_with_families": "player" },
+      "max_dist": 16
+    }
+  ],
+  "must_see": true
+},
+"minecraft:target_nearby_sensor": {
+  "inside_range": 3.0,
+  "outside_range": 7.0,
+  "on_inside_range": {
+    "event": "minecraft:start_exploding",
+    "target": "self"
+  },
+  "on_outside_range": {
+    "event": "minecraft:stop_exploding",
+    "target": "self"
+  }
+}
     },
 
 
@@ -302,7 +332,31 @@
             "minecraft:pig_saddled"
           ]
         }
-      }
+      },
+"minecraft:start_exploding": {
+  "remove": {
+    "component_groups":[
+      "minecraft:hunting"
+    ]
+  },
+  "add": {
+    "component_groups": [
+      "minecraft:exploding"
+    ]
+  }
+},
+"minecraft:stop_exploding": {
+  "remove": {
+    "component_groups": [
+      "minecraft:exploding"
+    ]
+  },
+  "add": {
+    "component_groups": [
+      "minecraft:hunting"
+    ]
+  }
+}
     }
   }
 }
