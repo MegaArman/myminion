@@ -129,13 +129,13 @@
       },
   "minecraft:exploding": {
     "minecraft:explode": {
-      "fuseLength": 1.0,
+      "fuseLength": 1.5,
       "fuseLit": true,
       "power": 4,
       "causesFire": false
     },
     "minecraft:scale": {
-      "value": 4
+      "value": 3
     }
   }
     },
@@ -246,14 +246,14 @@
   "entity_types": [
     {
       "filters": { "other_with_families": ["mob"] },
-      "max_dist": 32
+      "max_dist": 16
     }
   ],
   "must_see": true
 },
 "minecraft:target_nearby_sensor": {
-  "inside_range": 32.0,
-  "outside_range": 7.0,
+  "inside_range": 7.0,
+  "outside_range": 10.0,
   "on_inside_range": {
     "event": "minecraft:start_exploding",
     "target": "self"
